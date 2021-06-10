@@ -22,8 +22,10 @@
 > mlagents-learn config/rollerball_config.yaml --run-id=RollerBall
 - 'TrainingArea' GameObject를 prefab으로 만들어 복제하면 parallel learning 가능.
 	- parallel learning을 사용하면 학습 시간이 줄어듦. 성능에는 큰 차이 X. (step 줄여서 시간 재보기)
-		- RollerBall 1개일 때: 50000 step을 하는데 697.590초 소요
-		- RollerBall 3개일 때: 50000 step을 하는데 278.904초 소요
+		- RollerBall 1개일 때: 50000 step을 하는데 697.590초 소요  
+		<img src="https://user-images.githubusercontent.com/59794238/121476633-e1fa7e00-ca01-11eb-8802-fd07b6842183.png" width="50%"></img>  
+		- RollerBall 3개일 때: 50000 step을 하는데 278.904초 소요  
+		<img src="https://user-images.githubusercontent.com/59794238/121476667-ea52b900-ca01-11eb-8a10-b2fd0da87d03.png" width="50%"></img>  
 
 ### 4. Designing a Learning Environment - [link](https://github.com/Unity-Technologies/ml-agents/blob/release_17_docs/docs/Learning-Environment-Design.md)
 - 건물 내부에서 길을 찾는 강화학습 환경 만들기 (turtlebot 예제처럼?)

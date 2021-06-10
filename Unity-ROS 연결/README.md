@@ -1,4 +1,4 @@
-## rosbridge, ROS#의 역할
+## 통신 방법
 
 Unity, ROS 통신을 위해 rosbridge, ROS#(ros-sharp) 사용.
 - rosbridge : Web socket 통신을 활용하여 JSON 형태로 Unity, ROS 사이에서 정보 전달.

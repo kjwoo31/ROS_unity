@@ -1,4 +1,4 @@
-# ml-agents tutorial - [link](https://github.com/Unity-Technologies/ml-agents/blob/release_17_docs/docs/Readme.md)
+# ML-Agents tutorial - [link](https://github.com/Unity-Technologies/ml-agents/blob/release_17_docs/docs/Readme.md)
 
 ### 1. 설치
 - 안전한 버전 설치

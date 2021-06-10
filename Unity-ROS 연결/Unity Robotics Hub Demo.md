@@ -5,7 +5,9 @@
 
 ### Part 1: Create Unity scene with imported URDF
 - Download Unity Editor(2020.2.0b9), set up a basic Unity Scene.
-- Import a robot using URDF importer. (Niryo One, add package from [git](https://github.com/Unity-Technologies/URDF-Importer.git?path=/com.unity.robotics.urdf-importer))
+- Import a robot using URDF importer. (Niryo One, add package from [git](https://github.com/Unity-Technologies/URDF-Importer.git?path=/com.unity.robotics.urdf-importer))  
+<img src="https://user-images.githubusercontent.com/59794238/121474507-233d5e80-c9ff-11eb-90b5-4b6ed1710260.png" width="50%"></img>  
+
 
 ### Part 2: ROS-Unity Integration
 - TCP connection between Unity and ROS.
@@ -23,8 +25,8 @@
 3. Script
 	- SourceDestinationPublisher: communicate with ROS, grabbing the positions of the target and destination objects and sending it to the ROS Topic "SourceDestination_input". (Unity's (x,y,z) is equivalent to the ROS (z,-x,y) coordinate)
 		- Publish 버튼을 누르면 이 script의 Publish() 함수를 작동. 
-		- roslaunch niryo_moveit part_2.launch를 실행하면 ROS로 정보 전달.
-
+		- roslaunch niryo_moveit part_2.launch를 실행하면 ROS로 정보 전달.  
+<img src="https://user-images.githubusercontent.com/59794238/121474642-4f58df80-c9ff-11eb-84e6-ee4c6f154bde.png" width="50%"></img>  
 
 ### Part 3: Pick-and-Place In Unity
 <img src="https://github.com/Unity-Technologies/Unity-Robotics-Hub/blob/main/tutorials/pick_and_place/img/4_old_flow.png" width="50%"></img>  
@@ -37,6 +39,11 @@
 			- TrajectoryResponse()로 경로 가져옴. 
 				- ExecuteTrajectories(): iterates through the joints to assign a new xDrive.target value based on the ROS service response, until the goal trajectories have been reached. Based on the pose assignment, this function may call the OpenGripper or CloseGripper methods as is appropriate.
 	- mover.py: holds the ROS-side logic for the MoverService. When the service is called, the function plan_pick_and_place() runs. This calls plan_trajectory on the current joint configurations (sent from Unity) to a destination pose (dependent on the phase of the pick-and-place task).
+
+
+(작동 모습)  
+<img src="https://user-images.githubusercontent.com/59794238/121475337-3bfa4400-ca00-11eb-884e-706897b1fd60.gif" width="50%"></img>  
+	
 
   -------------------------------------------------
   

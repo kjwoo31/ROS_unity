@@ -2,10 +2,20 @@
 
 unity 환경에서 ROS 명령을 받고 학습하는 프로그램 제작.
 
+파일 내용
 1. unity 공부
     1. Gazebo와 비교
 2. unity-ROS 연결
-    1. ros-sharp tutorial
+    1. ros-sharp tutorial - [link](https://www.erictaozheng.com/post/connect-robots-to-a-game-unity-ros) (X)
     2. Unity Robotics Hub Demo
 3. unity 강화학습
     1. ML-Agents
+
+해야할 일
+1. tutorial 다 하기 <-
+2. 각 tutorial의 내용 정리, Unity 버전 맞추기
+3. 전체 plot
+4. 로봇 URDF 불러오기
+5. Designing a Learning Environment - [link](https://github.com/Unity-Technologies/ml-agents/blob/release_17_docs/docs/Learning-Environment-Design.md)
+    - 건물 내부에서 길을 찾는 강화학습 환경 만들기 (turtlebot 예제 참고) 
+6. 작동하는지 확인

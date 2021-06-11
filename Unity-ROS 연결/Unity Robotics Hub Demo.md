@@ -13,6 +13,7 @@
 - TCP connection between Unity and ROS.
 - Generating C# scripts from a ROS msg and srv files, and publishing to a ROS topic.
 - 'ROS TCP Connector' 패키지를 사용하여 통신 가능. (ROS-Unity 통신 플러그인 사용, add package from [git](https://github.com/Unity-Technologies/ROS-TCP-Connector.git?path=/com.unity.robotics.ros-tcp-connector))
+	- 에는 github에서 script를 가져와 사용했어야 했는데, 이제는 제공하는 플러그인을 사용하면 됨.
 	- TcpConnector: contains ROSConnection, which provides the necessary functions to publish, subscribe, or call a service using the TCP endpoint ROS node.
 	- MessageGeneration : generates C# classes, including serialization and deserialization functions, from ROS messages.
 

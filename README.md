@@ -22,3 +22,4 @@ unity 환경에서 ROS 명령을 받고 학습하는 프로그램 제작.
 알아볼 것
 1. unity phys engine 어떤 것 사용?
 2. 서버에서 돌아가야 함. Unity 화면을 안 띄우고 실행하는 방법?
+3. unity ROS server 지연? program 지연?

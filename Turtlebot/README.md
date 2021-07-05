@@ -48,8 +48,6 @@ git clone https://github.com/kjwoo31/ROS_unity.git
 
 The ROS workspace is now ready to accept commands!
 
----
-
 ## 2. Unity Setup
 1. Install [Unity Hub](https://unity3d.com/get-unity/download).
 
@@ -71,9 +69,8 @@ The ROS workspace is now ready to accept commands!
 
 Now you are ready to communicate ROS and Unity.
 
----
 
-## Launch the file and click the Play button in Unity.
+## 3. Launch the file and click the Play button in Unity.
 
 ```
 roslaunch turtlebot_teleop move.launch

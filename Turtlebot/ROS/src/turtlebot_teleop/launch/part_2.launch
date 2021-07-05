@@ -1,0 +1,5 @@
+<launch>
+    <rosparam file="$(find turtlebot_teleop)/config/params.yaml" command="load"/>
+    <node name="server_endpoint" pkg="turtlebot_teleop" type="server_endpoint.py" args="--wait" output="screen" respawn="true" />
+    <node name="trajectory_subscriber" pkg="turtlebot_teleop" type="trajectory_subscriber.py" args="--wait" output="screen"/>
+</launch>

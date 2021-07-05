@@ -82,3 +82,10 @@ roslaunch 파일에 적은 parameter를 불러온다.
 ```
 rospy.loginfo("I will publish to the topic %s", topic)
 ```
+
+3) python에서 custom message를 불러오는 방법 (https://wsstudynote.tistory.com/4 참고, Cmakelist 수정 필요함)
+1. 패키지 폴더 안에 msg 파일 생성 
+2. find_package에 message_generation를 추가
+3. Cmakelists에서 정의한 Object.msg 를 add_message_files에 추가
+4. message를 추가하기 위해서는 **dependencies 설정**
+5. 새로 빌드 하기 (catkin_make)

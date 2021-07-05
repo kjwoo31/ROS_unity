@@ -107,6 +107,9 @@ roslaunch turtlebot_teleop move.launch
    -  http://wiki.ros.org/ROS/Installation
    -  http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment
    - http://wiki.ros.org/catkin/Tutorials/create_a_workspace
+- How to make custom ROS message in python
+   - https://wsstudynote.tistory.com/4
+   - Need to edit CMakeLists.txt
 - Instructions for ROS-Unity integration
    - https://github.com/Unity-Technologies/Unity-Robotics-Hub/tree/main/tutorials/ros_unity_integration
 

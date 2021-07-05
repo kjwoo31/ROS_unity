@@ -1,6 +1,8 @@
 # Turtlebot Teleoperation in Unity
 
-Implement of Turtlebot Teleoperation in Unity Environment using URDF Importer, ROS–Unity Integration from [Unity Robotics Hub](https://github.com/Unity-Technologies/Unity-Robotics-Hub).
+Implement of Turtlebot Teleoperation in Unity Environment using URDF Importer, ROS–Unity Integration from [Unity Robotics Hub](https://github.com/Unity-Technologies/Unity-Robotics-Hub).   
+
+<img src="https://user-images.githubusercontent.com/59794238/124425434-7fe42d00-dda3-11eb-95c3-534d64938604.gif" width="100%"></img>  
 
 Imported URDF files from [turtlebot_description](https://github.com/turtlebot/turtlebot/tree/melodic/turtlebot_description/urdf). Sending and receiving messages between ROS and Unity.
 
@@ -11,6 +13,7 @@ git clone https://github.com/kjwoo31/ROS_unity.git
 ```
 
 ## 1. ROS Setup
+> Note: Tested with ROS Melodic, Ubuntu 18.04.
 1. The provided files require the following packages to be installed. ROS Melodic users should run the following commands if the packages are not already present:
 
    ```
@@ -91,7 +94,6 @@ roslaunch turtlebot_teleop move.launch
      rosrun xacro xacro turtlebot3_waffle.urdf.xacro
      ```
 - Setting up a ROS workspace:
-   > Note: this tutorial has been tested with ROS Melodic.
    -  http://wiki.ros.org/ROS/Installation
    -  http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment
    - http://wiki.ros.org/catkin/Tutorials/create_a_workspace

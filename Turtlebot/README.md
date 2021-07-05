@@ -84,11 +84,22 @@ roslaunch turtlebot_teleop move.launch
 ---
 
 ## Resources
+- Unity Robotics Hub
+   - https://github.com/Unity-Technologies/Unity-Robotics-Hub
+- Turtlebot Teleoperation using ROS2
+   - https://unity-ros2.readthedocs.io/en/latest/turtlebot3-navigation2.html#
+- How to convert xacro file to urdf
+   - https://answers.ros.org/question/10401/how-to-convert-xacro-file-to-urdf-file/
+     ```
+     rosrun xacro xacro turtlebot3_waffle.urdf.xacro
+     ```
 - Setting up a ROS workspace:
    > Note: this tutorial has been tested with ROS Melodic.
    -  http://wiki.ros.org/ROS/Installation
    -  http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment
    - http://wiki.ros.org/catkin/Tutorials/create_a_workspace
+- Instructions for ROS-Unity integration
+   - https://github.com/Unity-Technologies/Unity-Robotics-Hub/tree/main/tutorials/ros_unity_integration
 
 ---
 

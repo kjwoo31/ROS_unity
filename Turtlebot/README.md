@@ -83,6 +83,16 @@ roslaunch turtlebot_teleop move.launch
 
 ---
 
+## How to activate in new terminal (after setup)
+
+```
+cd /PATH/TO/ROS_unity/Turtlebot/ROS/
+catkin_make && source devel/setup.bash
+roslaunch turtlebot_teleop move.launch
+```
+
+---
+
 ## Resources
 - Unity Robotics Hub
    - https://github.com/Unity-Technologies/Unity-Robotics-Hub

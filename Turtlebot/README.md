@@ -4,14 +4,11 @@ Implement of Turtlebot Teleoperation in Unity Environment using URDF Importer, R
 
 Imported URDF files from [turtlebot_description](https://github.com/turtlebot/turtlebot/tree/melodic/turtlebot_description/urdf). Sending and receiving messages between ROS and Unity.
 
----
 
-## How to Start
+# How to Start
 ```
 git clone https://github.com/kjwoo31/ROS_unity.git
 ```
-
----
 
 ## 1. ROS Setup
 1. The provided files require the following packages to be installed. ROS Melodic users should run the following commands if the packages are not already present:
@@ -66,21 +63,23 @@ The ROS workspace is now ready to accept commands!
 1. In Unity, double click to open the `Assets/Scenes/EmptyScene` scene if it is not already open.
 
 1. Import .msg file from `Robotics -> ROS Message Browser` from the top menu bar. Browse turtlebot_teleop package and build TurtlebotTeleop.msg file.
-  - If Unity Robotics packages doesn't appear, follow the directions from [here](https://github.com/Unity-Technologies/Unity-Robotics-Hub/blob/main/tutorials/quick_setup.md).
+   - If Unity Robotics packages doesn't appear, follow the directions from [here](https://github.com/Unity-Technologies/Unity-Robotics-Hub/blob/main/tutorials/quick_setup.md).
 
 1. Select `Robotics -> ROS Settings` from the top menu bar.
    - In the ROS Settings window, the `ROS IP Address` should be the IP address of your ROS machine (*not* the one running Unity).
    - Find the IP address of your ROS machine. In Ubuntu, open a terminal window, and enter `hostname -I`.
 
-Now you are ready to communicate with ROS and Unity.
+Now you are ready to communicate ROS and Unity.
 
 ---
 
 ## Launch the file and click the Play button in Unity.
-    ```
-    roslaunch turtlebot_teleop move.launch
-    ```
-    - Use wasd or arrow keys to send message.
+
+```
+roslaunch turtlebot_teleop move.launch
+```
+    
+- Use wasd or arrow keys to send message in Unity.
 
 ---
 

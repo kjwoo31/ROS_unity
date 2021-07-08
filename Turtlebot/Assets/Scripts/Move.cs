@@ -58,9 +58,6 @@ public class Move : MonoBehaviour
         deltaPosition = BaseRigidbody.transform.TransformDirection(deltaPosition);
         Quaternion deltaRotation = Quaternion.Euler(-commandVelocityAngular * Mathf.Rad2Deg * Time.fixedDeltaTime);
 
-	if (deltaPosition.z != 0)
-	        Debug.Log(deltaPosition.z);
-
         BaseRigidbody.MovePosition(BaseRigidbody.position + deltaPosition);
         BaseRigidbody.MoveRotation(BaseRigidbody.rotation * deltaRotation);      
   

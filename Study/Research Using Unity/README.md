@@ -10,13 +10,19 @@
 ### CHALET
 : 3D house simulator. Able to move between rooms in complete houses. (58 rooms, 10 default houses)
 
+<br>
+
 ## Manipulation
 ### Learning Dexterous In-Hand Manipulation
 : OpenAI 알고리즘으로 shadow hand 동작 학습. Randomized RGB image data 얻을 때 Unity 사용.
 
+<br>
+
 ## Learning from Demonstration
 ### Learning from Demonstration in the Wild
 : 실제 주행 영상에서 데이터를 가져와 이동 경로 학습. Unity로 만든 가상 환경에 학습한 알고리즘으로 차 운전.
+
+<br>
 
 ## Multi-Agent
 ### Arena

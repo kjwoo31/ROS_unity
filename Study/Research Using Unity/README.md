@@ -10,6 +10,9 @@
 ### CHALET
 : 3D house simulator. Able to move between rooms in complete houses. (58 rooms, 10 default houses)
 
+### SEAN
+: 도시, 건물 내부와 같은 사회적 환경에서 navigation하는 로봇 개발을 위한 환경 제공
+
 <br>
 
 ## Manipulation

@@ -1,0 +1,47 @@
+mobile robot nav (O)
+
+https://github.com/mohammed-eldin/SOFAR_NAV_05
+
+SEAN: Social Environment for Autonomous Navigation (launch 파일 설명 부족)
+
+https://github.com/yale-sean
+
+참고
+
+HRC
+(X, Resource not found: The following package was not found in <arg default="$(find baxter_moveit_config)/launch/moveit.rviz" name="rviz_config"/>: baxter_moveit_config)
+
+https://github.com/programmatoroSeduto/SOFAR-2020-2021-HUMAN-BAXTER-COLLABORATION
+https://github.com/TheEngineRoom-UniGe/SofAR-Human-Robot-Collaboration
+https://github.com/NabStaio/SOFAR_assignment_HRC05
+https://github.com/ShozabAbidi10/Software-Architecture-Project
+
+Quadrotor
+
+https://github.com/plusk01/rosflight_unity
+
+conveyorbelt
+
+https://github.com/lephamtuyen/ur2021
+
+ai2thor
+
+https://github.com/allenai/ai2thor
+
+cloi - LG, Unity Scene이 없음. ROS2로 제작. 현재 개발 중으로 보임. (X)
+
+https://github.com/lge-ros2/cloisim
+
+ROSRL
+(X, tensorflow 버전 에러. 3년 전 ROS, python 이용한 강화학습 프로젝트)
+
+https://github.com/Mediemanden/Unity3D-ROS-RL
+
+ZeroSim (Unity Robotics Hub처럼 URDF import, 동작시키는 tool. 현재 개발 중)
+- docker 사용, 코드 수정이 어려워 부적합
+
+https://github.com/fsstudio-team/ZeroSimROSUnity
+
+ROS2 Turtlebot Nav
+
+https://unity-ros2.readthedocs.io/en/latest/turtlebot3-navigation2.html

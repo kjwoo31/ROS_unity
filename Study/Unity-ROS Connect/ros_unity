@@ -1,0 +1,75 @@
+mlagent
+https://github.com/Unity-Technologies/ml-agents/blob/release_17_docs/docs/Learning-Environment-Create-New.md
+
+
+GAZEBO
+http://gazebosim.org/tutorials/?tut=ros_control
+- simulation (robot -> gazebo)
+https://github.com/ROBOTIS-GIT/turtlebot3_simulations
+- turtlebot teleop
+https://github.com/ROBOTIS-GIT/turtlebot3/tree/master/turtlebot3_teleop
+
+
+Unity
+cd Desktop/Turtlebot/ROS/
+catkin_make && source devel/setup.bash
+roslaunch turtlebot_teleop move.launch
+
+export TURTLEBOT3_MODEL=burger
+roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+
+RViz
+http://wiki.ros.org/turtlebot3_example
+
+cd catkin_ws
+catkin_make && source devel/setup.bash
+export TURTLEBOT3_MODEL=burger
+roslaunch turtlebot3_gazebo turtlebot3_world.launch
+
+export TURTLEBOT3_MODEL=burger
+roslaunch turtlebot3_slam turtlebot3_slam.launch
+
+('rospack find turtlebot3_slam'/rviz/turtlebot3_slam.rviz)
+
+export TURTLEBOT3_MODEL=burger
+roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+
+
+action lib
+
+https://wiki.ros.org/actionlib_tutorials/Tutorials
+
+
+husky
+
+1 - Launch the slam_gmapping node
+cd Desktop/husky/ROS/
+catkin_make && source devel/setup.bash
+roslaunch mobile_robot_navigation_project gmapping.launch
+
+2 - Launch the move_base node
+cd Desktop/husky/ROS/
+catkin_make && source devel/setup.bash
+roslaunch mobile_robot_navigation_project move_base2.launch
+
+3 - Launch the Rviz node
+cd Desktop/husky/ROS/
+catkin_make && source devel/setup.bash
+roslaunch mobile_robot_navigation_project view_model.launch
+-> base_link
+
+4 - Launch the Navigation node to start the communications between ROS and Unity
+cd Desktop/husky/ROS/
+catkin_make && source devel/setup.bash
+roslaunch mobile_robot_navigation_project navigation.launch
+
+rossharp
+https://github.com/siemens/ros-sharp/wiki/User_App_ROS_UnitySimulationExample
+
+cd Desktop/test/ROS
+catkin_make && source devel/setup.bash
+roslaunch unity_simulation_scene unity_simulation_scene.launch
+
+cd Desktop/test/ROS
+catkin_make && source devel/setup.bash
+roslaunch unity_simulation_scene unity_simulation_rl.launch

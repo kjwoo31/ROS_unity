@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch">
+		<arg name="port" value="9090"/>
+  </include>
+
+  <node name="file_server" pkg="file_server" type="file_server" output="screen"/>
+
+  <node name="mouse_to_joy" pkg="unity_simulation_scene" type="mouse_to_joy.py" output="screen"/>
+
+  <arg name="model" value="burger"/>
+
+  <include file="$(find turtlebot3_bringup)/launch/includes/description.launch.xml">
+    <arg name="model" value="$(arg model)" />
+  </include>
+
+  <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" output="screen">
+    <param name="publish_frequency" type="double" value="50.0" />
+  </node>
+
+  <node name="odometry_publisher" pkg="unity_simulation_scene" type="odometry_publisher.py" output="screen" respawn="true" />
+
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find unity_simulation_scene)/rviz/model.rviz"/>
+
+</launch>

@@ -1,0 +1,29 @@
+{
+    "Turtlebot": {
+        "checkpoints": [
+            {
+                "steps": 7881,
+                "file_path": "results/Turtlebot/Turtlebot/Turtlebot-7881.onnx",
+                "reward": 0.0,
+                "creation_time": 1627619088.5200255,
+                "auxillary_file_paths": [
+                    "results/Turtlebot/Turtlebot/Turtlebot-7881.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 7881,
+            "file_path": "results/Turtlebot/Turtlebot.onnx",
+            "reward": 0.0,
+            "creation_time": 1627619088.5200255,
+            "auxillary_file_paths": [
+                "results/Turtlebot/Turtlebot/Turtlebot-7881.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.26.0",
+        "torch_version": "1.8.1+cu102"
+    }
+}
